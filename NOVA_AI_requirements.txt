@@ -1,0 +1,10 @@
+streamlit
+google-genai
+python-dotenv
+ddgs
+pypdf
+pdfplumber
+python-docx
+fastembed
+reportlab
+certifi
