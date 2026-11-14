@@ -1,29 +1,25 @@
-
 import os
 import streamlit as st
 from dotenv import load_dotenv
 
-# Load local .env when running on your computer
 load_dotenv()
 
-# Read Streamlit Cloud secrets when deployed
-try:
-    cloud_secrets = st.secrets
-except Exception:
-    cloud_secrets = {}
 
-# Prefer local environment variables, then Streamlit secrets
-API_KEY = (
-    os.getenv("GEMINI_API_KEY")
-    or cloud_secrets.get("GEMINI_API_KEY")
-)
+def get_setting(name):
+    value = os.getenv(name)
 
-MODEL = (
-    os.getenv("GEMINI_MODEL")
-    or cloud_secrets.get("GEMINI_MODEL")
-)
+    if value:
+        return value
 
-# Validate configuration
+    try:
+        return st.secrets.get(name)
+    except Exception:
+        return None
+
+
+API_KEY = get_setting("GEMINI_API_KEY")
+MODEL = get_setting("GEMINI_MODEL")
+
 if not API_KEY:
     raise ValueError("NOVA ERROR: Gemini API key is missing!")
 
