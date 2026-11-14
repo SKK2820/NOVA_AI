@@ -218,3 +218,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# NOVA local configuration and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# NOVA local data
+nova_history.db
+nova_history.db-shm
+nova_history.db-wal
+documents/
+model_cache/
+backups/
+logs/
+
+# Local development environments
+venv/
+.venv/
