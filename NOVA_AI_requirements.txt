@@ -1,7 +1,7 @@
 streamlit
 google-genai
 python-dotenv
-ddgs
+ddgs==9.16.1
 pypdf
 pdfplumber
 python-docx
