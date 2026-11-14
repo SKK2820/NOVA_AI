@@ -7,8 +7,6 @@
 **Primary model service:** Google Gemini API  
 **Persistence:** Local SQLite database and project folders
 
-> This handoff was prepared from the `app.py`, `config.py`, and `NOVA_AI_requirements.txt` files uploaded for this task. It describes the implementation visible in those files. It does not assume that earlier versions or previous feature descriptions are more accurate than the current source.
-
 ---
 
 ## 1. What NOVA is
