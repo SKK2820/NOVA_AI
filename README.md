@@ -114,8 +114,6 @@ NOVA-AI/
 └── .streamlit/            # Optional Streamlit configuration
 ```
 
-**Important:** Never commit your `.env` file or expose your API key.
-
 **Deployment Platform:** Streamlit Community Cloud
 
 ---
