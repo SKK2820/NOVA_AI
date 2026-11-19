@@ -6,7 +6,7 @@ NOVA is a Python-based AI assistant powered by the **Google Gemini API**, built 
 
 NOVA is designed to go beyond ordinary AI conversations by allowing users to interact with their documents, recall previous discussions, conduct research across multiple web sources, and generate downloadable reports.
 
-**Live Application:** Due to security reasons the deployment link will not be shared.
+**Live Application:** https://skknovaai-bixbtpzxdbe5rrcgcuttxl.streamlit.app/
 
 ---
 
